@@ -171,8 +171,9 @@ Wait for all groups to complete the task and add results in the shared file. The
 
 ## 4) Nuclei & Cell Segmentation
 
+To do the segmentation
 
-* [run_Cellpose-SAM.ipynb](https://github.com/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb): run Cellpose-SAM on test data.
+* [Open cellpose.ipynb](https://github.com/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb): run Cellpose-SAM on test data.
 
 The segmentation of nuclei and cells is the starting point of several image analysis tasks in microscopy. In this assignment we will use Fiji to create a pipeline for the segmentation of cells and nuclei. Be inspired by the image below! 
 
