@@ -185,7 +185,7 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 
 * Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
 
-In more advanced samples, such as dense tissue slices or confluent cell layers, threshold-based segmentation approaches may not be able to differentiate between single cells. A robust deep-learning based segmentation technique is [cellpose](https://cellpose.readthedocs.io/en/latest/) which is widely used to label cells and nuclei in a variety of samples. As it requires a GPU and lots of memory to run the segmentation in a reasonable time you can run it on google colab. To load the script, press this button 
+In more advanced samples, such as dense tissue slices or confluent cell layers, threshold-based segmentation approaches may not be able to differentiate between single cells. A robust deep-learning based segmentation technique is [cellpose](https://cellpose.readthedocs.io/en/latest/) which is widely used to label cells and nuclei in a variety of samples. It is a python library and it requires a GPU and lots of memory to run the segmentation in a reasonable time so you can run the prepared cellpose script on google colab, a cloud computing service. To load the script, press this button 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb)
 
