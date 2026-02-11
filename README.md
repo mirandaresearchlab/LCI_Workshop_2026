@@ -171,10 +171,6 @@ Wait for all groups to complete the task and add results in the shared file. The
 
 ## 4) Nuclei & Cell Segmentation
 
-To do the segmentation
-
-* [Open cellpose.ipynb](https://github.com/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb): run Cellpose-SAM on test data.
-
 The segmentation of nuclei and cells is the starting point of several image analysis tasks in microscopy. In this assignment we will use Fiji to create a pipeline for the segmentation of cells and nuclei. Be inspired by the image below! 
 
 You can choose to work with your own images, acquired during the LCI Microscopy course, or, you can work with the images located in the folder "../images/noise/". 
@@ -186,9 +182,14 @@ You can choose to work with your own images, acquired during the LCI Microscopy 
 * Remember that the background subtraction can improve the segmentation results;
 * Pre-processing: you can find several convolution filters in "Process->Filters";
 * Remember to create a copy of the original image in case you want to quantify pixel intensity
-* If thresholding does not perform well, you can try [StarDist](https://github.com/stardist/stardist-imagej)
-	- Available as a plugin for FIJI. Two trained models: fluorescent nuclei and H&E stained images
+
 * Activate the macro recording function "Plugins->Macros->Record..." in Fiji to save all the functions and plugins that you use. Then try to create your own script!
+
+In more advanced samples, such as dense tissue slices or confluent cell layers, threshold-based segmentation approaches may not be able to differentiate between single cells. A robust deep-learning based segmentation technique is [cellpose](https://cellpose.readthedocs.io/en/latest/) which is widely used to label cells and nuclei in a variety of samples. As it requires a GPU and lots of memory to run the segmentation in a reasonable time you can run it on google colab. To load the script, press this button 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mirandaresearchlab/LCI_Workshop_2026/blob/main/scripts/cellpose.ipynb)
+
+Otherwise, you can choose to install cellpose locally if you have a GPU or Macos with M-type processor.
 
 ## Acknowledgements
 
